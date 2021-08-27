@@ -1,0 +1,13 @@
+<div class="container">
+  <form *ngIf="formEdit" [formGroup]="formEdit" (ngSubmit)="submit()">
+    <div >
+      <input class="form-control" type="text" placeholder="title" formControlName="title">
+      <input class="form-control" type="text" placeholder="author" formControlName="author">
+      <textarea class="form-control" type="text" placeholder="description" formControlName="description"></textarea>
+    </div>
+
+
+    <button class="btn-success">Update</button>
+  </form>
+</div>
+

@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/layouts/navbar/navbar.component';
 import { SlidebarComponent } from './components/layouts/slidebar/slidebar.component';
 import { MasterComponent } from './components/layouts/master/master.component';
 import { FoodterComponent } from './components/layouts/foodter/foodter.component';
+import {BooksModule} from "./components/books/books.module";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -15,10 +17,13 @@ import { FoodterComponent } from './components/layouts/foodter/foodter.component
     SlidebarComponent,
     MasterComponent,
     FoodterComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BooksModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

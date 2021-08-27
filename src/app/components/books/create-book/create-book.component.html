@@ -1,0 +1,18 @@
+<div class="container" >
+  <h2>Create book</h2>
+<form *ngIf="formAdd" [formGroup]="formAdd" (ngSubmit)="add()">
+  <div class="mb-3">
+    <label  class="form-label">Title</label>
+    <input type="text" class="form-control" formControlName="title">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Author</label>
+    <input type="text" class="form-control"  formControlName="author">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Description</label>
+    <textarea type="text" class="form-control"  formControlName="description"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

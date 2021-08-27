@@ -1,0 +1,13 @@
+<div class="container">
+
+<h1>Book Detail</h1>
+<form *ngIf="formDetail" [formGroup]="formDetail" >
+  <div>{{book.title}}</div>
+  <div>{{book.author}}</div>
+  <div>{{book.description}}</div>
+  <div>
+
+      <button class="btn-success" routerLink="/list">Back</button>
+  </div>
+</form>
+</div>
